@@ -1,0 +1,53 @@
+<%= form_for(@savek) do |f| %>
+  <% if @savek.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@savek.errors.count, "error") %> prohibited this savek from being saved:</h2>
+
+      <ul>
+      <% @savek.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :occupation %><br>
+    <%= f.text_field :occupation %>
+  </div>
+  <div class="field">
+    <%= f.label :latitude %><br>
+    <%= f.text_field :latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :longitude %><br>
+    <%= f.text_field :longitude %>
+  </div>
+  <div class="field">
+    <%= f.label :radius %><br>
+    <%= f.text_field :radius %>
+  </div>
+  <div class="field">
+    <%= f.label :avg_rating %><br>
+    <%= f.text_field :avg_rating %>
+  </div>
+  <div class="field">
+    <%= f.label :ratings %><br>
+    <%= f.number_field :ratings %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br>
+    <%= f.text_field :gender %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

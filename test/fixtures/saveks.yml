@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  occupation: MyString
+  latitude: 
+  longitude: 
+  radius: 
+  avg_rating: 
+  ratings: 1
+  gender: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  occupation: MyString
+  latitude: 
+  longitude: 
+  radius: 
+  avg_rating: 
+  ratings: 1
+  gender: MyString
