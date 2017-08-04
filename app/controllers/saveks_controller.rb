@@ -4,11 +4,10 @@ class SaveksController < ApplicationController
   # GET /saveks
   # GET /saveks.json
   def index
-    before = Time.at(params[:before] || Time.now.to_i)
+    before = Time.at((params[:before] || Time.now).to_i)
     count = params[:count] || 10
     @saveks = Savek.where(updated_at: Time.at(0)..before).limit(count)
     @last_count = @saveks.last.updated_at.to_i
-
   end
 
   # GET /saveks/1
